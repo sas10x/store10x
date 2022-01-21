@@ -21,9 +21,33 @@ const BottomTabNav = () => {
                     )
                 }}
             />
-            <Tab.Screen component={HomeScreen} name="profile"/>
-            <Tab.Screen component={ShoppingCartScreen} name="cart"/>
-            <Tab.Screen component={HomeScreen} name="more"/>
+            <Tab.Screen 
+                component={HomeScreen} 
+                name="profile"
+                options={{
+                    tabBarIcon: ({color}) => (
+                        <Entypo name="user" color={color} size={19} />
+                    )
+                }}
+            />
+            <Tab.Screen 
+                component={ShoppingCartScreen} 
+                name="cart"
+                options={{
+                    tabBarIcon: ({color}) => (
+                        <Entypo name="shopping-cart" color={color} size={19} />
+                    )
+                }}
+            />
+            <Tab.Screen 
+                component={HomeScreen} 
+                name="menu"
+                options={{
+                    tabBarIcon: ({color}) => (
+                        <Entypo name="menu" color={color} size={19} />
+                    )
+                }}
+            />
         </Tab.Navigator>
     )
 }
