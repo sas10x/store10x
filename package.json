@@ -13,6 +13,7 @@
     "@react-navigation/bottom-tabs": "^5.11.15",
     "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.14.9",
+    "country-list": "^2.2.0",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/country-list": "^2.1.0",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
     "@types/react-native-vector-icons": "^6.4.10",

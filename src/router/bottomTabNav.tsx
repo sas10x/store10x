@@ -6,19 +6,21 @@ import { View, Text } from 'react-native'
 import HomeScreen from '../screens/HomeScreen';
 import ShoppingCartScreen from '../screens/ShoppingCartScreen';
 import Entypo from 'react-native-vector-icons/Entypo';
+import ProductScreen from '../screens/ProductScreen';
+import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNav = () => {
     return (
         <Tab.Navigator tabBarOptions={{showLabel: false}}>
-            <Tab.Screen 
-                component={HomeScreen} 
+            <Tab.Screen
+                component={HomeStack}
                 name="home"
                 options={{
-                    tabBarIcon: ({color}) => (
-                        <Entypo name="home" color={color} size={19} />
-                    )
+                tabBarIcon: ({color}) => (
+                    <Entypo name="home" color={color} size={25} />
+                ),
                 }}
             />
             <Tab.Screen 
@@ -40,7 +42,7 @@ const BottomTabNav = () => {
                 }}
             />
             <Tab.Screen 
-                component={HomeScreen} 
+                component={ProductScreen} 
                 name="menu"
                 options={{
                     tabBarIcon: ({color}) => (
